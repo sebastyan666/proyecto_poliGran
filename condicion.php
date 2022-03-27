@@ -5,7 +5,7 @@
         case 'GET':
             if(isset($_GET['idcondicion'])) {
 
-                echo json_encode(condicion::getWhere($_GET['idcondicion']));
+                echo json_encode(condicion::getWhere($_GET['idcondicion'])); 
 
             }else {
 
