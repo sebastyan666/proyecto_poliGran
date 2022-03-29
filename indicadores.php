@@ -1,15 +1,16 @@
 <?php 
-    require_once "models/laboratorio.model.php";
+    require_once "models/indicadores.model.php";
+
 
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'GET':
-            if(isset($_GET['id_laboratorio'])) {
+            if(isset($_GET['id_salud'])) {
 
-                echo json_encode(r_laboratorio::getWhere($_GET['id_laboratorio']));
+                echo json_encode(indicadores_salud::getWhere($_GET['id_salud']));
 
             }else {
 
-                echo json_encode(r_laboratorio::getAll());
+                echo json_encode(indicadores_salud::getAll());
             }
                
               
@@ -18,7 +19,7 @@
         case 'POST':
             $datos = json_decode(file_get_contents('php://input')); //json->array
             if ($datos != NULL) {
-                if (r_laboratorio::insert($datos->usuarios_id, $datos->Descriccion, $datos->Imagen)) {
+                if (indicadores_salud::insert($datos->usuarios_id, $datos->Fecha, $datos->Frecuencia_cardiaca, $datos->Tencion_arterial, $datos->Saturacion_oxigeno, $datos->Vacunas, $datos->Entrenamiento, $datos->Distancia_recorridas)) {
                     http_response_code(200);
                 }//end if
                 else {
@@ -34,7 +35,7 @@
              case 'PUT':   
                 $datos = json_decode(file_get_contents('php://input')); //json->array
                 if ($datos != NULL) {
-                    if (r_laboratorio::update($datos->id_laboratorio,$datos->usuarios_id, $datos->Descriccion, $datos->Imagen)) {
+                    if (indicadores_salud::update($datos->id_salud, $datos->usuarios_id, $datos->Fecha, $datos->Frecuencia_cardiaca, $datos->Tencion_arterial, $datos->Saturacion_oxigeno, $datos->Vacunas, $datos->Entrenamiento, $datos->Distancia_recorridas)) {
                         http_response_code(200);
                     }//end if
                     else {
@@ -52,8 +53,8 @@
             
     
             case 'DELETE':
-                if(isset($_GET['id_laboratorio'])) {
-                    if (r_laboratorio::delete($_GET['id_laboratorio'])) {
+                if(isset($_GET['id_salud'])) {
+                    if (indicadores_salud::delete($_GET['id_salud'])) {
                         http_response_code(200);
                     }//end if
                     else {

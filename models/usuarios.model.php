@@ -2,24 +2,23 @@
 
     require_once 'connection/conexion.php';
 
-    class controles {
+    class usuarios {
 
         public static function getAll(){
 
             $db = new conexion();
-            $query = "SELECT * FROM controles";
+            $query = "SELECT * FROM usuarios";
             $resultado = $db->query($query);
             $datos = [];
             if ($resultado->num_rows) {
 
                 while ($row = $resultado->fetch_assoc() ) {
                     $datos[] = [
-                        'id' => $row['idcontroles'],  
-                        'usuarios' => $row['usuarios_id'],  
-                        'nombre' => $row['Nombre_profecional'],  
-                        'especialidad' => $row['Especialidad'],  
-                        'fecha' => $row['Fecha'],  
-                        'observaciones' => $row['Observaciones']
+                        'id_usuario' => $row['id_usuario'],  
+                        'Nombre_completo' => $row['Nombre_completo'],  
+                        'Edad' => $row['Edad'],  
+                        'Correo_electronico' => $row['Correo_electronico']
+                       
 
 
                     ];
@@ -34,19 +33,17 @@
         public static function getWhere($id){
 
             $db = new conexion();
-            $query = "SELECT * FROM controles WHERE idcontroles=$id";
+            $query = "SELECT * FROM usuarios WHERE id_usuario=$id";
             $resultado = $db->query($query);
             $datos = [];    
             if ($resultado->num_rows) {
 
                 while ($row = $resultado->fetch_assoc() ) {
                     $datos[] = [
-                        'id' => $row['idcontroles'],  
-                        'usuario' => $row['usuarios_id'],  
-                        'nombre' => $row['Nombre_profecional'],  
-                        'especialidad' => $row['Especialidad'],  
-                        'fecha' => $row['Fecha'],  
-                        'observaciones' => $row['Observaciones']
+                        'id_usuario' => $row['id_usuario'],  
+                        'Nombre_completo' => $row['Nombre_completo'],  
+                        'Edad' => $row['Edad'],  
+                        'Correo_electronico' => $row['Correo_electronico']
 
 
                     ];
@@ -58,7 +55,7 @@
 
         }//get all
 
-        public static function insert($usuarios_id, $Nombre_profecional, $Especialidad, $Fecha, $Observaciones){
+      /*  public static function insert($usuarios_id, $Nombre_profecional, $Especialidad, $Fecha, $Observaciones){
             $db = new conexion();
 
             $query = "INSERT INTO controles (usuarios_id, Nombre_profecional, Especialidad,Fecha,Observaciones)
@@ -96,7 +93,7 @@
                 return TRUE;
             }
             return FALSE;
-        }
+        }*/
 
     }//class controles
 

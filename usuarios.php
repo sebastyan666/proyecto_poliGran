@@ -1,21 +1,21 @@
 <?php 
-    require_once "models/controles.model.php";
+    require_once "models/usuarios.model.php";
 
     switch ($_SERVER['REQUEST_METHOD']) {
         case 'GET':
-            if(isset($_GET['idcontroles'])) {
+            if(isset($_GET['id_usuario'])) {
 
-                echo json_encode(controles::getWhere($_GET['idcontroles']));
+                echo json_encode(usuarios::getWhere($_GET['id_usuario']));
 
             }else {
 
-                echo json_encode(controles::getAll());
+                echo json_encode(usuarios::getAll());
             }
                
               
             break;
 
-        case 'POST':
+       /* case 'POST':
             $datos = json_decode(file_get_contents('php://input')); //json->array
             if ($datos != NULL) {
                 if (controles::insert($datos->usuarios_id, $datos->Nombre_profecional, $datos->Especialidad, $datos->Fecha, $datos->Observaciones)) {
@@ -65,7 +65,7 @@
 
              break;
 
-        
+        */
 
 
 
