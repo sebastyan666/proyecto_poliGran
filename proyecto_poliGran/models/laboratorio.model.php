@@ -54,6 +54,29 @@
 
         }//get all
 
+        public static function getWhereUser($id){
+
+            $db = new conexion();
+            $query = "SELECT * FROM r_laboratorio WHERE usuarios_id=$id";
+            $resultado = $db->query($query);
+            $datos = [];    
+            if ($resultado->num_rows) {
+
+                while ($row = $resultado->fetch_assoc() ) {
+                    $datos[] = [
+                        'id_laboratorio' => $row['id_laboratorio'],  
+                        'usuarios_id' => $row['usuarios_id'], 
+                        'Descripcion' => $row['Descriccion'], 
+                        'Imagen' => $row['Imagen'],   
+                    ];
+                } //end while
+                return $datos;
+
+            }
+                return $datos;
+
+        }//get all
+
         public static function insert($usuarios_id, $Descriccion, $Imagen){
             $db = new conexion();
 

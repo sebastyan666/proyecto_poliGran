@@ -7,7 +7,11 @@
 
                 echo json_encode(controles::getWhere($_GET['idcontroles']));
 
-            }else {
+            }
+            else if (isset($_GET['idusuarios'])){
+                echo json_encode(controles::getWhereUser($_GET['idusuarios']));
+            }
+             else {
 
                 echo json_encode(controles::getAll());
             }

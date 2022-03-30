@@ -8,7 +8,11 @@
 
                 echo json_encode(indicadores_salud::getWhere($_GET['id_salud']));
 
-            }else {
+            }
+            else if (isset($_GET['usuario_id'])){
+                echo json_encode(indicadores_salud::getWhereUser($_GET['usuario_id']));
+            }
+            else {
 
                 echo json_encode(indicadores_salud::getAll());
             }

@@ -7,7 +7,11 @@
 
                 echo json_encode(r_laboratorio::getWhere($_GET['id_laboratorio']));
 
-            }else {
+            }
+            else if (isset($_GET['usuario_id'])){
+                echo json_encode(r_laboratorio::getWhereUser($_GET['usuario_id']));
+            }
+            else {
 
                 echo json_encode(r_laboratorio::getAll());
             }

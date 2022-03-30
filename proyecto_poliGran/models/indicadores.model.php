@@ -63,6 +63,33 @@
                 return $datos;
 
         }//get all
+        
+        public static function getWhereUser($id){
+
+            $db = new conexion();
+            $query = "SELECT * FROM indicadores_salud WHERE usuarios_id=$id";
+            $resultado = $db->query($query);
+            $datos = [];    
+            if ($resultado->num_rows) {
+
+                while ($row = $resultado->fetch_assoc() ) {
+                    $datos[] = [
+                        'id_salud' => $row['id_salud'],  
+                        'usuario_id' => $row['usuarios_id'], 
+                        'Fecha' => $row['Fecha'], 
+                        'Frecuencia_cardiaca' => $row['Frecuencia_cardiaca'],   
+                        'Tencion_arterial' => $row['Tencion_arterial'],  
+                        'Saturacion_oxigeno' => $row['Saturacion_oxigeno'], 
+                        'Vacunas' => $row['Vacunas'], 
+                        'Entrenamiento' => $row['Entrenamiento'],
+                        'Distancia_recorridas' => $row['Distancia_recorridas']  
+                    ];
+                } //end while
+                return $datos;
+            }
+                return $datos;
+
+        }//get all
 
         public static function insert($usuarios_id,$Fecha, $Frecuencia_cardiaca, $Tencion_arterial, $Saturacion_oxigeno, $Vacunas, $Entrenamiento, $Distancia_recorridas){
             $db = new conexion();

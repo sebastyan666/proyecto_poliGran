@@ -14,13 +14,11 @@
 
                 while ($row = $resultado->fetch_assoc() ) {
                     $datos[] = [
-                        'id_usuario' => $row['id_usuario'],  
+                        'id' => $row['id_usuario'],  
                         'Nombre_completo' => $row['Nombre_completo'],  
+                        'Genero' => $row['Genero'],
                         'Edad' => $row['Edad'],  
                         'Correo_electronico' => $row['Correo_electronico']
-                       
-
-
                     ];
                 } //end while
                 return $datos;
