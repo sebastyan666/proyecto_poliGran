@@ -14,3 +14,54 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = d:\src\PoliGran\Proyecto I\proyecto_poligran_cliente
 build_property._RazorSourceGeneratorDebug = 
+<<<<<<< HEAD
+=======
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Family/Family.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWx5XEZhbWlseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Family/_TableConditions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWx5XF9UYWJsZUNvbmRpdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Family/_TableControls.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWx5XF9UYWJsZUNvbnRyb2xzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Family/_TableIndicators.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWx5XF9UYWJsZUluZGljYXRvcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Family/_TableLaboratoryResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWx5XF9UYWJsZUxhYm9yYXRvcnlSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/src/PoliGran/Proyecto I/proyecto_poligran_cliente/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bnxfysqkun
+>>>>>>> origin/front

@@ -1,0 +1,31 @@
+@model IEnumerable<IndicatorModel>
+@using proyecto_poligran_cliente.Models;
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Frecuencia Cardiaca</th>
+                <th>Tensión Arterial</th>
+                <th>Saturación Oxigeno</th>
+                <th>Vacunas</th>
+                <th>Entrenamiento</th>
+                <th>Distancia Recorrida</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var indicator in Model)
+            {
+                <tr>
+                    <td>@indicator.Fecha</td>
+                    <td>@indicator.Frecuencia_cardiaca</td>
+                    <td>@indicator.Tension_arterial</td>
+                    <td>@indicator.Saturacion_oxigeno</td>
+                    <td>@indicator.Vacunas</td>
+                    <td>@indicator.Entrenamiento</td>
+                    <td>@indicator.Distancia_recorridas</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

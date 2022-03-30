@@ -1,0 +1,21 @@
+@model IEnumerable<LaboratoryResultModel>
+@using proyecto_poligran_cliente.Models;
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Descripcion</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var result in Model)
+            {
+                <tr>
+                    <td>@result.Descripcion</td>
+                    <td>@result.Imagen</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

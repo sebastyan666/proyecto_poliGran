@@ -16296,6 +16296,71 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "proyecto_poligran_cliente",
+<<<<<<< HEAD
   "Documents": [],
+=======
+  "Documents": [
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Family\\_TableIndicators.cshtml",
+      "TargetPath": "Views\\Family\\_TableIndicators.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Family\\_TableControls.cshtml",
+      "TargetPath": "Views\\Family\\_TableControls.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Family\\_TableLaboratoryResults.cshtml",
+      "TargetPath": "Views\\Family\\_TableLaboratoryResults.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Family\\_TableConditions.cshtml",
+      "TargetPath": "Views\\Family\\_TableConditions.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Family\\Family.cshtml",
+      "TargetPath": "Views\\Family\\Family.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\src\\PoliGran\\Proyecto I\\proyecto_poligran_cliente\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+>>>>>>> origin/front
   "SerializationFormat": "0.2"
 }

@@ -1,0 +1,25 @@
+@model IEnumerable<ConditionModel>
+@using proyecto_poligran_cliente.Models;
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Condicion</th>
+                <th>Tipo</th>
+                <th>Fecha</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var control in Model)
+            {
+                <tr>
+                    <td>@control.Condicion</td>
+                    <td>@control.Tipo</td>
+                    <td>@control.Fecha_inicio</td>
+                    <td>@control.Observaciones</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
